@@ -7,7 +7,7 @@
   {% if breadcrumbs_config.icon_home %}
   <i class="{{ breadcrumbs_config.icon_home }}"></i>
   {% endif %}
-  <ul class="horizontal-scroll" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <ul itemscope itemtype="https://schema.org/BreadcrumbList">
   {% for crumb in crumbs %}
     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
       {% if not loop.last %}
